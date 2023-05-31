@@ -109,18 +109,80 @@
       <button onclick="window.print()">Print this page</button>
       <hr>
     </div>
+
+
+    <div>
+      <h2>JavaScript Statements</h2>
+
+      <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+      <p id="program"></p>
+      <hr>
+    </div>
+
+    <div>
+      <p>In HTML, JavaScript statements are executed by the browser.</p>
+      <p id="sumu"></p>
+      <hr>
+    </div>
+
+
+    <div>
+      <p>JavaScript statements are separated by semicolons.</p>
+
+      <p id="demo1"></p>
+      <hr>
+    </div>
+
+    <div>
+      <p>Try to change lastName to lastname.</p>
+      <p id="last"></p>
+
+      <hr>
+    </div>
+
+
+
+
+
+
+
+
   </div>
+
+
 
   <!-- js -->
 
   <script>
+    let x, y, z;  // Statement 1
+    x = 5;        // Statement 2
+    y = 6;        // Statement 3
+    z = x + y;    // Statement 4
+
+    let a, b, c;
+    a = 10;
+    b = 6;
+    c = a + b;
+
+    let lastname, lastName;
+    lastName = "Doe";
+    lastname = "Peterson";
+
+
     document.getElementById("body").innerHTML = "My First JavaScript";
     document.getElementById("add").innerHTML = 5 + 6;
     alert(5 + 6);
     console.log(5 + 6);
+    document.getElementById("program").innerHTML =
+      "The value of z is " + z + ".";
 
 
+    document.getElementById("sumu").innerHTML = "Hello sumaiya.";
 
+    document.getElementById("demo1").innerHTML = c;
+
+    document.getElementById("last").innerHTML = lastName;
 
   </script>
 
